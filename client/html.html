@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <title>Greeting Generator</title>
+</head>
+<body>
+
+<div id="inputs-container">
+    <label for="event">Choose an event:</label>
+    <select id="event" onchange="handleEventChange()">
+        <option value="birthday">Birthday</option>
+        <option value="wedding">Wedding</option>
+        <!-- Add more event options as needed -->
+    </select>
+
+    <!-- Additional inputs based on the selected event -->
+    <div id="additional-inputs"></div>
+
+    <!-- General questions for the blessing -->
+    <label for="blessing-type">Choose blessing type:</label>
+    <select id="blessing-type">
+        <option value="song">Song</option>
+        <option value="short">Short</option>
+        <option value="long">Long</option>
+        <option value="letter">Letter</option>
+        <option value="entertaining">Entertaining</option>
+    </select>
+
+    <label for="atmosphere">Choose atmosphere:</label>
+    <select id="atmosphere">
+        <option value="happy">Happy</option>
+        <option value="entertaining">Entertaining</option>
+        <option value="funny">Funny</option>
+        <option value="exciting">exciting</option>
+    </select>
+</div>
+
+        <!-- Additional inputs based on the selected event -->
+        <div id="additional-inputs"></div>
+    </div>
+    <button id="generateGreetingBtn" onclick="generateGreeting()">Write me a greeting</button>
+    <div id="selectedOptions"></div>
+    <div id="greetingOutput"></div>
+    <button id="changeOptionsBtn" onclick="changeOptions()">I want something different</button>
+
+</body>
+</html>
+

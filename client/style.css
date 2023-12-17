@@ -1,0 +1,42 @@
+/* Your existing styles */
+
+#selectedOptions {
+    margin-top: 20px;
+}
+
+#selectedOptions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#selectedOptions li {
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #eee;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#selectedOptions li:hover {
+    background-color: #ddd;
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#inputs-container {
+    margin-bottom: 20px;
+}
+
+#generateGreetingBtn, #changeOptionsBtn {
+    margin: 10px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+#greetingOutput {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
