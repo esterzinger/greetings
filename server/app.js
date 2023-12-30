@@ -1,5 +1,5 @@
 const express = require('express');
-const process=require('dotenv').config();
+require('dotenv').config();
 const app = express();
 const port = 3000;
 
@@ -7,7 +7,7 @@ const port = 3000;
 
 const apiKey = process.env.API_KEY;
 
-
+console.log(apiKey)
 app.use(express.json());
 
 app.post('/generate-greeting', async (req, res) => {
