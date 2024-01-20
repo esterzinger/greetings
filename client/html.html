@@ -9,18 +9,14 @@
 </head>
 <body>
 
-<div id="inputs-container">
+<div id="inputs">
     <label for="event">Choose an event:</label>
     <select id="event" onchange="handleEventChange()">
-        <option value="birthday">Birthday</option>
         <option value="wedding">Wedding</option>
-        <!-- Add more event options as needed -->
+        <option value="birthday">Birthday</option>
     </select>
 
-    <!-- Additional inputs based on the selected event -->
     <div id="additional-inputs"></div>
-
-    <!-- General questions for the blessing -->
     <label for="blessing-type">Choose blessing type:</label>
     <select id="blessing-type">
         <option value="song">Song</option>
@@ -38,15 +34,15 @@
         <option value="exciting">exciting</option>
     </select>
 </div>
-
+<div id="inputs-container">
         <!-- Additional inputs based on the selected event -->
-        <div id="additional-inputs"></div>
-    </div>
+    <div id="additional-inputs"></div>
     <button id="generateGreetingBtn" onclick="generateGreeting()">Write me a greeting</button>
     <div id="selectedOptions"></div>
     <div id="greetingOutput"></div>
-    <button id="changeOptionsBtn" onclick="changeOptions()">I want something different</button>
-
+    <button id="getDiffrentGreete" style="display: none;"  onclick="getDiffrentGreete()">I want something different</button>
+    <button id="changeOptionsBtn" style="display: none;" onclick="changeOptions()">change my choices</button>
+</div>
 </body>
 </html>
 

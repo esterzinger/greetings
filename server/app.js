@@ -3,8 +3,6 @@ require('dotenv').config();
 const app = express();
 const port = 3000;
 
-
-
 const apiKey = process.env.API_KEY;
 
 console.log(apiKey)
