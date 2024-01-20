@@ -73,20 +73,19 @@ async function sendReq(){
  const atmosphere = document.getElementById("atmosphere").options[document.getElementById("atmosphere").selectedIndex].text;
 
   const response =
-//  await fetch('http://localhost:3000/generate-greeting', {
-//      method: 'POST', // Note: HTTP method should be in uppercase
-//      headers: {
-//        'Content-Type': 'application/json', // Assuming you are sending JSON
-//      },
-//      body: JSON.stringify({ "event": event, "age": age, "type": type, "atmosphere": atmosphere }),
-//    });
-//    if (response.ok) {
+ await fetch('http://localhost:3000/generate-greeting', {
+     method: 'POST', 
+     headers: {
+       'Content-Type': 'application/json', 
+     },
+     body: JSON.stringify({ "event": event, "age": age, "type": type, "atmosphere": atmosphere }),
+   });
+   if (response.ok) {
 
-//      result = await response.json();
-     result={1:"I am first",2:"I am second",3:"I am third"}
-    // } else {
-    //     console.error('Error fetching options');
-    //   }
+     result = await response.json();
+    } else {
+        console.error('Error fetching options');
+      }
 }
 
 
