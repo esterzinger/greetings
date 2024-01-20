@@ -45,9 +45,4 @@ describe('Server Tests', function () {
     expect(response.body).to.have.property('error');
   });
 
-  // Add more tests as needed
-
-  after(() => {
-    // Cleanup or additional tasks after all tests run
-  });
 });
